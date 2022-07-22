@@ -20,14 +20,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-tsij8^j1h^9e4!^fohxs3%jh15z1v1mm$ee6$0#=0=s3j6ir2j'
+SECRET_KEY = '#######################################################'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 ALLOWED_HOSTS = ['ec2-18-183-157-139.ap-northeast-1.compute.amazonaws.com',
-                 'elb-2146115587.ap-northeast-1.elb.amazonaws.com',
-                 '172.31.12.141']
+                 'elb-2146115587.ap-northeast-1.elb.amazonaws.com']
 
 
 # Application definition
@@ -83,10 +82,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'project1',
-        'USER': 'admin',
-        'PASSWORD' : 'coon1234',
-        'HOST':'database-1.cwyr93pfyypv.ap-northeast-1.rds.amazonaws.com',
-        'PORT':'3306',
+        'USER': '#######################',
+        'PASSWORD' : '####################',
+        'HOST':'#########################',
+        'PORT':'##########################',
         'OPTIONS':{
             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
         }    
